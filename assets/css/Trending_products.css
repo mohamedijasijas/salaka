@@ -1,0 +1,47 @@
+.slide-showcase{
+    background: #f0f8f7;
+    padding: 3rem 2rem;
+    text-align: center;
+    outline: .2rem solid transparent;
+    transition: .25s ease;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.product__banner {
+    border-radius: .3rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    height: 180px;
+}
+
+.product__banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0.9);
+    transition: transform .3s;
+}
+
+
+.slide-showcase .card-content{
+    text-align: center;
+    background: transparent;
+    padding: 0 3px;
+}
+.slide-showcase .card-content h3{
+    display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: margin-top .3s;
+    text-transform: capitalize;
+}
+
+.card-content .btn{
+    margin: auto;
+    margin-top: 1.3rem;
+}

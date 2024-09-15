@@ -1,0 +1,106 @@
+
+/* home */
+
+@keyframes fadeOut{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeLeft{
+    0%{
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+}
+
+.banner{
+    position: relative;
+}
+
+.banner .banner-slides-container .banner-slide{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 5rem 0;
+    padding-top: 1rem !important;
+    display: none;
+}
+
+.banner .banner-slides-container .banner-slide.active{
+    display: flex;
+}
+
+.banner .banner-slides-container .banner-slide .content{
+    flex: 1 1 40rem;
+    animation: fadeLeft .4s linear .4s backwards;
+    text-transform: capitalize;
+    margin-top: -2rem;
+}
+
+.banner .banner-slides-container .banner-slide .content span{
+    font-size: 2rem;
+    color: #666;
+}
+
+.banner .banner-slides-container .banner-slide .content h3{
+    font-size: 6rem;
+    color: #12c2b9;
+}
+
+.banner .banner-slides-container .banner-slide .content p{
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 2;
+}
+
+.banner .banner-slides-container .banner-slide .content .btn span{
+    color: #fff;
+}
+
+
+.banner .banner-slides-container .banner-slide .image{
+    flex: 1 1 25rem;
+    padding: 3rem 0;
+}
+
+.banner .banner-slides-container .banner-slide .image img{
+    width: 100%;
+    animation: fadeOut .4s linear;
+}
+
+.banner #banner-slide-next,
+.banner #banner-slide-prev{
+    position: absolute;
+    /* top: 40%;
+    transform: translateY(-50%); */
+    bottom: 10rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 2.3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border: .1rem solid #10221b;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.banner #banner-slide-next:hover,
+.banner #banner-slide-prev:hover{
+    background: #10221b;
+    color: #fff;
+}
+
+.banner #banner-slide-next{
+    right: 2rem;
+}
+
+.banner #banner-slide-prev{
+    left: 2rem;
+}
+
+/* end */
+

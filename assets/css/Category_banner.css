@@ -1,0 +1,48 @@
+.cate__banner-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.cate__banner-box{
+    width: 100%;
+    height: auto;
+    background-color: #d7d7d7;
+    overflow: hidden;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    position: relative;
+    transition: all 0.2s;
+}
+.cate__banner-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cate__banner-box:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cate__banner-box::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+.cate__banner-box::after {
+    background-color: #e8e8e8;
+}
+.cate__banner-box:hover img::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.cate__banner-box img{
+    width: 100%;
+}
